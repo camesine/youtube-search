@@ -18,7 +18,9 @@ class VideoDetail extends Component {
           <div className="video-container" >
             <iframe width="853" height="480" title={video.snippet.title} src={url} frameBorder="0"></iframe>
           </div>
-          <h3>{video.snippet.title}</h3>
+          <h5>{video.snippet.title}</h5>
+          <p>{video.snippet.channelTitle}</p>
+          <p>{video.snippet.description}</p>
         </div>
       </div>
     )

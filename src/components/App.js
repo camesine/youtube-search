@@ -16,7 +16,8 @@ class App extends Component {
     }
 
     YTSearch({
-      key: 'AIzaSyAsBr4YU8NHyO3yXP9-Ga5WVfk6mF14hDE', term: 'pandas'}, (videos) => {
+      key: 'AIzaSyAsBr4YU8NHyO3yXP9-Ga5WVfk6mF14hDE', term: 'chile'}, (videos) => {
+        console.log(videos)
         this.setState({
           videos,
           selectedVideo: videos[0]
@@ -28,6 +29,7 @@ class App extends Component {
   render() {
     return (
       <div>
+
         <SearchBar />
 
         <div className="row">
