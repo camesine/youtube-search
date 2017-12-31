@@ -5,7 +5,7 @@ class VideoListItem extends Component {
 
   render(props) {
     return (
-      <li>
+      <li onClick={() => this.props.onSelectVideo(this.props.video)} >
         <div className="hide-on-small-only row">
           <div className="col m12 l5">
             <img className="right" src={this.props.video.snippet.thumbnails.default.url} alt="" />

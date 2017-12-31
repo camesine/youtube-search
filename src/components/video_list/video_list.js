@@ -6,10 +6,10 @@ class VideoList extends Component {
   render(props) {
     return (
       <ul>
-        {this.props.videos.map(video => {
-          console.log(video.snippet)
-          return <VideoListItem key={video.id.videoId} video={ video } />
-        } )}
+        {this.props.videos.map(video => <VideoListItem 
+        key={video.id.videoId} 
+        video={ video } 
+        onSelectVideo={ this.props.onSelectVideo } /> )}
       </ul>
     )
   }
