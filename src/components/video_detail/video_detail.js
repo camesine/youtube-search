@@ -15,7 +15,9 @@ class VideoDetail extends Component {
     return (
       <div className="row">
         <div className="col l12">
-          <iframe title={video.snippet.title} src={url} frameBorder="0"></iframe>
+          <div className="video-container" >
+            <iframe width="853" height="480" title={video.snippet.title} src={url} frameBorder="0"></iframe>
+          </div>
           <h3>{video.snippet.title}</h3>
         </div>
       </div>

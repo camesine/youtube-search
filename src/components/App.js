@@ -31,11 +31,13 @@ class App extends Component {
         <SearchBar />
 
         <div className="row">
-          <div className="col s4 m4 l4 right">
-            <VideoList onSelectVideo={video => this.setState({selectedVideo: video})} videos={ this.state.videos } />
-          </div>
-          <div className="col s8 m8 l8">
+          
+          <div className="col s12 m12 l8">
             <VideoDetail video={ this.state.selectedVideo } />
+          </div>
+
+          <div className="col s12 m12 l4">
+            <VideoList onSelectVideo={video => this.setState({selectedVideo: video})} videos={ this.state.videos } />
           </div>
         </div>
 
